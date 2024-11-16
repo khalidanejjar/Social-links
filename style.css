@@ -1,0 +1,90 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(0, 0%, 20%);
+    --dark-grey:hsl(0, 0%, 12%);
+    --black:hsl(0, 0%, 8%);
+}
+
+html,body{
+    font-size: 14px;
+    font-family: "Outfit", serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+/* Aligning the layout to the center */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 450px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--dark-grey);
+    margin-top: 2.4rem;
+    margin-bottom: 2rem;
+}
+/* Social */
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+/* Image */
+.social__img img{
+    width: 95px;
+    border-radius: 50%;
+}
+/* Titles */
+.social__title-lg{
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.2px;
+}
+.social__title-sm{
+    color: var(--green);
+    margin-bottom: 2rem;
+}
+/* List of buttons */
+
+.social__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Button */
+.social__list-btn{
+    background-color: var(--light-grey);
+    margin: .7rem;
+    padding: 1rem;
+    width: 70%;
+    border-radius: 10px;
+
+}
+.social__list-btn:hover{
+    background-color: var(--green);
+    color: var(--black);
+}
+
+/* Mobile layout */
+
+@media (max-width:375px) {
+    .container{
+        width: 300px;
+    }
+}
+
